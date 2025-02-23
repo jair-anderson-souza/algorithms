@@ -7,12 +7,7 @@ class Solution {
         }
         Arrays.parallelSort(firstWord);
         Arrays.parallelSort(secondWord);
-        for(int i=0; i<firstWord.length; i++){
-            if(firstWord[i] != secondWord[i]){
-                return false;
-            }
-        }
-        return true;
+        return Arrays.equals(firstWord, secondWord);
 
     }
 }
