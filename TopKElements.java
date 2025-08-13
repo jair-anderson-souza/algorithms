@@ -1,4 +1,8 @@
-class Solution {
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class TopKElements {
     public static int[] topKFrequent(int[] nums, int k) {
 
         Map<Integer, Integer> frequency = new HashMap<>();
