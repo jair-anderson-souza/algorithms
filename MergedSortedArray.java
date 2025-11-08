@@ -7,7 +7,7 @@ public class MergedSortedArray {
         int sizeNums1 = m + n - 1;
         int indexM = m - 1;
         int indexN = n - 1;
-        while (indexN >= 0) { //If n weren't higher than 0, it means nums2 is empty
+        while (indexN >= 0) {
             if (indexM >= 0 && nums1[indexM] > nums2[indexN]) {
                 nums1[sizeNums1--] = nums1[indexM--];
 
@@ -15,7 +15,6 @@ public class MergedSortedArray {
                 nums1[sizeNums1--] = nums2[indexN--];
             }
         }
-        System.out.println(nums1);
     }
 
     public static void main(String[] args) {
